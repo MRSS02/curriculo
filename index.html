@@ -13,6 +13,10 @@
         margin: 0;
         padding: 0;
       }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
       .divider {
         display: flex;
         overflow-x: none;
@@ -32,6 +36,15 @@
       .right {
         width: 70vw;
         background-color: #999999;
+      }
+      .flex {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+      }
+      .image {
+        width: 30px;
+        margin-right: 10px;
       }
       @media (max-width: 700px) {
         .left {
@@ -91,11 +104,29 @@
                adquirido para testar novas possibilidades.
              </p>
           </div>
-          <div class="spaceout">
+          <div class="morespaceout">
             <h2 claass="subtitle">Dados e informações de contato:</h2>
             <p class="textbox">
-              Meu github:
-              <a href="https://github.com/MRSS02">www.github.com/MRSS02</a>
+              <div class="flex">
+                <img alt="" class="image"
+                src="https://img.icons8.com/office/16/000000/phone.png" />
+                (71) 98620-3752
+              </div>
+              <div class="flex">
+                <img alt="" class="image"
+                src="https://img.icons8.com/ultraviolet/50/000000/email-open--v1.png" />
+                mateusyasd@hotmail.com
+              </div>
+              <div class="flex">
+                <img alt="" class="image"
+                src="https://github.githubassets.com/favicons/favicon-dark.svg" />
+                <a href="https://github.com/MRSS02">www.github.com/MRSS02</a>
+              </div>
+              <div class="flex">
+                <img alt="" class="image"
+                src="https://static-exp1.licdn.com/sc/h/1bt1uwq5akv756knzdj4l6cdc" />
+                <a href="https://www.linkedin.com/in/mateus-romano-1577b81b1/">www.linkedin.com/in/mateus-romano-1577b81b1</a>
+              </div>
             </p>
           </div>
         </div>
