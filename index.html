@@ -12,6 +12,7 @@
         font-family: "EB Garamond", serif;
         margin: 0;
         padding: 0;
+        overflow-x: hidden;
       }
       a {
         color: inherit;
@@ -19,7 +20,7 @@
       }
       .divider {
         display: flex;
-        overflow-x: none;
+
       }
       .title {
        text-align: center;
@@ -46,7 +47,47 @@
         width: 30px;
         margin-right: 10px;
       }
-      @media (max-width: 700px) {
+      .subtitle {
+        margin-top: 5px;
+        font-size: 18px;
+      }
+      @media screen and (max-width: 1430px) {
+        .title {
+          font-size: 27px;
+        }
+        .subtitle {
+          font-size: 17px;
+        }
+        h3 {
+          font-size: 18px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+      @media screen and (max-width: 1270px) {
+        .title {
+          font-size: 2.1vw;
+        }
+        .subtitle {
+          font-size: 1.4vw;
+        }
+        h3 {
+          font-size: 1.5vw;
+        }
+        p {
+          font-size: 1.4vw;
+        }
+      }
+      @media screen and (max-width: 1240px) {
+        .left {
+          width: 35vw;
+        }
+        .right {
+          width: 65vw;
+        }
+      }
+      @media screen and (max-width: 1100px) {
         .left {
           width: 40vw;
         }
@@ -54,16 +95,90 @@
           width: 60vw;
         }
         .title {
-          font-size: 28px;
+          font-size: 2.6vw;
         }
         .subtitle {
-          font-size: 20px;
+          font-size: 1.7vw;
+        }
+        h3 {
+          font-size: 1.8vw;
+        }
+        p {
+          font-size: 1.6vw;
+        }
+      }
+      @media screen and (max-width: 900px) {
+        .left {
+          width: 45vw;
+        }
+        .right {
+          width: 55vw;
+        }
+        .title {
+          font-size: 2.8vw;
+        }
+        .subtitle {
+          font-size: 1.9vw;
+        }
+        h3 {
+          font-size: 2vw;
+        }
+        p {
+          font-size: 1.8vw;
+        }
+      }
+      @media screen and (max-width: 830px) {
+        .left {
+          width: 50vw;
+        }
+        .right {
+          width: 50vw;
+        }
+
+        h3 {
+          font-size: 18px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+      @media screen and (max-width: 800px) {
+        .left {
+          width: 100vw;
+        }
+        .right {
+          width: 100vw;
         }
         h3 {
           font-size: 18px;
         }
         p {
-          font-size: 14px;
+          font-size: 16px;
+        }
+      }
+      @media screen and (max-width: 750px) {
+
+        .left, .right {
+          min-width: 100vw;
+          min-height: 0;
+        }
+        .flex {
+          flex-direction: column;
+        }
+        .divider {
+          flex-direction: column;
+        }
+        .title {
+          font-size: 6.5vw;
+        }
+        .subtitle {
+          font-size: 3.75vw;
+        }
+        h3 {
+          font-size: 3.5vw;
+        }
+        p {
+          font-size: 3vw;
         }
       }
       .instances {
@@ -73,10 +188,6 @@
       }
       .spaceout {
         margin-top: 20px;
-      }
-      .subtitle {
-        margin-top: 5px;
-        font-size: 18px;
       }
       .morespaceout {
         margin-top: 120px;
@@ -105,7 +216,7 @@
              </p>
           </div>
           <div class="morespaceout">
-            <h2 claass="subtitle">Dados e informações de contato:</h2>
+            <h2 class="subtitle">Dados e informações de contato:</h2>
             <p class="textbox">
               <div class="flex">
                 <img alt="" class="image"
